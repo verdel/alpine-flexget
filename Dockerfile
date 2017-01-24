@@ -1,4 +1,4 @@
-FROM hub.solar.lan/alpine-base:latest
+FROM verdel/alpine-base:latest
 MAINTAINER Vadim Aleksandrov <valeksandrov@me.com>
 
 ENV FLEXGET_CONF_DIR /etc/flexget

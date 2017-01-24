@@ -1,0 +1,3 @@
+#!/usr/bin/with-contenv sh
+
+/usr/bin/flexget -c $FLEXGET_CONF_DIR/config.yml --loglevel verbose daemon start

@@ -1,0 +1,4 @@
+#!/usr/bin/with-contenv sh
+
+rm $FLEXGET_CONF_DIR/.config-lock > /dev/null 2>&1
+ 

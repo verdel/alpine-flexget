@@ -1,0 +1,6 @@
+#!/usr/bin/with-contenv sh
+
+rm $FLEXGET_CONF_DIR/.config-lock > /dev/null 2>&1
+rm $FLEXGET_CONF_DIR/*.yml > /dev/null 2>&1
+cp $FLEXGET_SYNC_DIR/*.yml $FLEXGET_CONF_DIR > /dev/null 2>&1
+ 

@@ -1,3 +1,4 @@
 #!/usr/bin/with-contenv sh
 
+/usr/bin/flexget -c $FLEXGET_CONF_DIR/config.yml web passwd $FLEXGET_WEB_PASSWD
 /usr/bin/flexget -c $FLEXGET_CONF_DIR/config.yml --loglevel verbose daemon start

@@ -12,7 +12,7 @@ RUN apk add --update \
     && pip install --upgrade six \
     && pip install --upgrade pytest-runner \
     && pip install --upgrade hgtools \
-    && pip install --upgrade https://github.com/Flexget/Flexget/tarball/master \
+    && pip install --upgrade flexget \
     && pip install --upgrade https://github.com/verdel/flexget-lostfilm-plugin/tarball/master \
     && pip install transmissionrpc \
     # Clean up

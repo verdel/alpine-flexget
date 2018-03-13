@@ -1,7 +1,7 @@
 #!/usr/bin/with-contenv bash
 
 WATCH_DIR="$FLEXGET_SYNC_DIR"
-SETTLE_DURATION=1
+SETTLE_DURATION=60
 MAX_WAIT_TIME=60
 IGNORE_EVENTS_WHILE_COMMAND_IS_RUNNING=1
 
@@ -62,7 +62,7 @@ do
     EVENT=$(echo "$RECORD" | sed 's/EVENT=\([^ ]*\).*/\1/')
     FILE=$(echo "$RECORD" | sed 's/EVENT=.* FILE=\([^ ]*\).*/\1/')
     if [[ $FILE == *"yml"* ]]; then
-      
+
       # Monster up as many events as possible, until we hit the either the settle duration, or the max wait threshold.
       wait_for_events_to_stabilize
       /usr/sbin/sync.sh &

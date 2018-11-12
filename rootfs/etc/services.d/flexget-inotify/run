@@ -1,3 +1,4 @@
 #!/usr/bin/with-contenv sh
 
-/usr/sbin/inotify.sh
+cd $FLEXGET_SYNC_DIR
+/usr/sbin/reflex -g '*.*' /usr/sbin/sync.sh
